@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- add a title (a) --> 
+    <title>My Shopping Cart</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="./js/myscript.js"></script>
+</head>
+<body>
+    <!-- add a logo (b) --> 
+    <img src="images/logo.png"  width="200px" height="200px" alt="Cart logo" class="logo">
+    <!-- add a header (c)-->
+    <h2>Shopping Cart</h2>
+    <!-- add a sub-header (c) --> 
+    <h3>The online shopping store</h3>
+    <!-- add a horizontal line (d)-->
+    <hr class="hr1">
+    <!-- add a horizontal menu (e) --> 
+    <ul class="navbar">
+        <li class="navbar"><a href="Home.html">Home</a></li>
+        <li class="navbar"><a href="../news.html">News</a></li>
+        <li class="navbar"><a href="./contact.html">Contact</a></li>
+        <li class="navbar"><a href="About.html">About</a></li> 
+    </ul>
+    <br>
+    <h1 id="reg" style="text-align: center;">Registration Form</h1>
+    <br>
+    <form method="post" onsubmit="return checkPassword()">
+     <label>First Name :</label> <input type="text" id="text1" required><br><br>
+
+     <label>Last Name :</label> <input type="text" id="text2" required><br><br>
+
+     <label>Gender :</label> <br>
+     <label for="male">Male</label>
+
+     <input type="radio" id="male" value="male" name="gender">
+     <label for="female">Female</label>
+
+     <input type="radio" id="female" value="female" name="gender"><br><br>
+     <label>Mobile Number :</label> <input type="text" id="text4" pattern="[0-9]{10}" title="Only 10 digit allowed"><br><br>
+      
+     <label for="email">Email :</label>
+     <input type="email" id="email" name="email"><br><br>
+
+     <label >Adress :</label><br>
+     <textarea rows="5" cols="30" id="txtarea1"></textarea><br><br>
+     
+     <label>DOB:</label>
+     <input type="date" min="1995-01-01" max="2005-12-31" required><br><br>
+
+     <label>Password:</label>
+     <input type="password" id="p1"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
+     
+     <label>Confirm Password:</label>
+     <input type="password" id="p2"  required><br><br>
+     <input type="checkbox" id="che1" onchange="check1()">
+     
+     <input type="submit" id="sub" value="Submit Now" disabled>
+
+
+
+    </form>
+   
+    <!-- add a footer (g)--> 
+    <footer>
+        <h5>Created By :- Sandaru Jayathilaka</h5>
+        <h5><a href="http://courseweb.sliit.lk/">Visit Our Course</a></h5>
+    </footer>
+</body>
+
+</html>
